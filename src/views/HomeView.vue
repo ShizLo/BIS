@@ -269,15 +269,112 @@
           </div>
         </v-carousel-item>
 
-        <v-carousel-item
-          src="https://cdn.vuetifyjs.com/images/cards/hotel.jpg"
-          cover
-        ></v-carousel-item>
+        <v-carousel-item class="carousel__item">
+          <div class="work__content">
+            <v-row>
+              <v-col cols="6" class="d-flex">
+                <div class="work__info">
+                  <div class="work__info-text">
+                    <h3 class="work__title">Дорожки, посадка и выравнивание</h3>
+                    <p class="work__description">
+                      От клиента поступил заказ на укладку дорожек, посадку и выравнивание
+                      территории на загородном участке недалеко от города Истра. Мы учли все
+                      особенности рельефа, согласовали план работ и создали гармоничный и аккуратный
+                      путь по участку, посадили цветы, кусты, а где-то даже деревья. В итоге клиент
+                      получил функциональные дорожки и красивый ландшафтный дизайн.
+                    </p>
+                  </div>
+                  <div class="work__pricelist">
+                    <div class="pricelist__item">
+                      <span class="pricelist__name">Стоимость:</span>
+                      <span class="pricelist__value font-weight-bold"> 150 000 руб.</span>
+                    </div>
+                    <div class="pricelist__item">
+                      <span class="pricelist__name">Срок:</span>
+                      <span class="pricelist__value font-weight-bold"> 1 рабочий день</span>
+                    </div>
+                    <div class="pricelist__item">
+                      <span class="pricelist__name">Расположение:</span>
+                      <span class="pricelist__value font-weight-bold"> Санкт-Петербург</span>
+                    </div>
+                  </div>
+                  <button type="button" class="work__btn open-modal">
+                    Заказать услугу
+                    <svg
+                      width="11"
+                      height="12"
+                      viewBox="0 0 11 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 6H10M10 6L5.5 10.5M10 6L5.5 1.5"
+                        stroke="#009CD9"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </v-col>
+              <v-col cols="6"></v-col>
+            </v-row>
+          </div>
+        </v-carousel-item>
 
-        <v-carousel-item
-          src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-          cover
-        ></v-carousel-item>
+        <v-carousel-item class="carousel__item">
+          <div class="work__content">
+            <v-row>
+              <v-col cols="6" class="d-flex">
+                <div class="work__info">
+                  <div class="work__info-text">
+                    <h3 class="work__title">Черновые парковка и заезд</h3>
+                    <p class="work__description">
+                      Построили бетонную площадку с двойным армированием под заезд и парковку на
+                      участок недалеко от Мытищ. Конструкция такой плиты рассчитана на высокие
+                      нагрузки в ходе строительства. После того, как на участок перестанет заезжать
+                      крупная техника, ее можно будет обложить тротуарной плиткой.
+                    </p>
+                  </div>
+                  <div class="work__pricelist">
+                    <div class="pricelist__item">
+                      <span class="pricelist__name">Стоимость:</span>
+                      <span class="pricelist__value font-weight-bold"> 750 000 руб.</span>
+                    </div>
+                    <div class="pricelist__item">
+                      <span class="pricelist__name">Срок:</span>
+                      <span class="pricelist__value font-weight-bold"> 2 рабочих дня</span>
+                    </div>
+                    <div class="pricelist__item">
+                      <span class="pricelist__name">Расположение:</span>
+                      <span class="pricelist__value font-weight-bold"> Санкт-Петербург</span>
+                    </div>
+                  </div>
+                  <button type="button" class="work__btn open-modal">
+                    Заказать услугу
+                    <svg
+                      width="11"
+                      height="12"
+                      viewBox="0 0 11 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 6H10M10 6L5.5 10.5M10 6L5.5 1.5"
+                        stroke="#009CD9"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </v-col>
+              <v-col cols="6"></v-col>
+            </v-row>
+          </div>
+        </v-carousel-item>
       </v-carousel>
     </v-container>
   </section>
@@ -313,7 +410,6 @@ export default defineComponent({
   margin-bottom: 30px;
 }
 .content_item_1 {
-  height: 350px;
 }
 .content_item_2 {
   height: 220px;
