@@ -1,5 +1,6 @@
 <template>
   <Banner />
+  <div class="brr"></div>
   <section class="content">
     <div>HEllo</div>
     <v-container>
