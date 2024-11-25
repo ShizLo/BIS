@@ -211,6 +211,79 @@
       </v-row>
     </v-container>
   </section>
+  <section class="work">
+    <v-container>
+      <h2 class="content__text">Примеры наших работ</h2>
+      <v-carousel height="565" hide-delimiters>
+        <v-carousel-item class="carousel__item">
+          <div class="work__content">
+            <v-row>
+              <v-col cols="6" class="d-flex">
+                <div class="work__info">
+                  <div class="work__info-text">
+                    <h3 class="work__title">Установка септика</h3>
+                    <p class="work__description">
+                      На видео – процесс установки септика под ключ на загородном участке в
+                      Электростали. Мы начали с осмотра и оценки участка, а затем разработали
+                      индивидуальное решение, учитывая потребности клиента. В результате нашей
+                      работы, заказчик получил надежную и эффективную систему, полностью
+                      соответствующую его требованиям.
+                    </p>
+                  </div>
+                  <div class="work__pricelist">
+                    <div class="pricelist__item">
+                      <span class="pricelist__name">Стоимость:</span>
+                      <span class="pricelist__value font-weight-bold"> 150 000 руб.</span>
+                    </div>
+                    <div class="pricelist__item">
+                      <span class="pricelist__name">Срок:</span>
+                      <span class="pricelist__value font-weight-bold"> 1 рабочий день</span>
+                    </div>
+                    <div class="pricelist__item">
+                      <span class="pricelist__name">Расположение:</span>
+                      <span class="pricelist__value font-weight-bold"> Санкт-Петербург</span>
+                    </div>
+                  </div>
+                  <button type="button" class="work__btn open-modal">
+                    Заказать услугу
+                    <svg
+                      width="11"
+                      height="12"
+                      viewBox="0 0 11 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 6H10M10 6L5.5 10.5M10 6L5.5 1.5"
+                        stroke="#009CD9"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </v-col>
+              <v-col cols="6"></v-col>
+            </v-row>
+          </div>
+        </v-carousel-item>
+
+        <v-carousel-item
+          src="https://cdn.vuetifyjs.com/images/cards/hotel.jpg"
+          cover
+        ></v-carousel-item>
+
+        <v-carousel-item
+          src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+          cover
+        ></v-carousel-item>
+      </v-carousel>
+    </v-container>
+  </section>
+  <section class="partner">
+    <v-container><h2 class="content__text">Наши партнеры</h2></v-container>
+  </section>
 </template>
 
 <script>
@@ -301,5 +374,59 @@ export default defineComponent({
 .plus__item-text {
   font: 500 16px / 125% 'Roboto Flex';
   color: #102938;
+}
+.carousel__item {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 60px 80px 60px 80px;
+}
+.work__info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.work__content {
+  display: flex;
+  gap: 60px;
+}
+.work__info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.work__title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 26px;
+  color: #102938;
+}
+.work__description {
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #405460;
+  padding: 0 !important;
+}
+.v-responsive__content {
+  display: flex;
+  flex: 1 0 0px;
+  max-width: 100%;
+}
+.pricelist__item {
+  font-size: 1.2rem;
+}
+.work__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 115%;
+  color: #009cd9;
+  cursor: pointer;
 }
 </style>
