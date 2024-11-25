@@ -1,6 +1,7 @@
 <template>
   <Banner />
   <section class="content">
+    <div>HEllo</div>
     <v-container>
       <h2 class="content__text">Наши услуги</h2>
       <div class="content__services"></div>
