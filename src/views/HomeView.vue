@@ -1,5 +1,6 @@
 <template>
   <Banner />
+  <div class="brr"></div>
   <section class="content">
     <v-container>
       <h2 class="content__text">Наши услуги</h2>
