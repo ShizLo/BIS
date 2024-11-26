@@ -72,6 +72,9 @@
       </v-container>
       <router-view />
     </v-main>
+    <footer class="footer">
+      <v-container> Footer </v-container>
+    </footer>
   </v-app>
 </template>
 
@@ -209,5 +212,9 @@ export default {
   font-size: 1.45rem;
   letter-spacing: 0.7px;
   white-space: nowrap;
+}
+.footer {
+  margin-top: 45px;
+  background: #f0f4f9;
 }
 </style>

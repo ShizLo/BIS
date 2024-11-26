@@ -1,8 +1,6 @@
 <template>
   <Banner />
-  <div class="brr"></div>
   <section class="content">
-    <div>HEllo</div>
     <v-container>
       <h2 class="content__text">Наши услуги</h2>
       <div class="content__services"></div>
@@ -380,8 +378,84 @@
       </v-carousel>
     </v-container>
   </section>
-  <section class="partner">
-    <v-container><h2 class="content__text">Наши партнеры</h2></v-container>
+  <section class="partners content">
+    <v-container>
+      <h2 class="content__text">Наши партнеры</h2>
+      <v-row class="d-flex">
+        <v-col cols="4">
+          <div class="partner__item">
+            <a class="partner__link" target="_blank">
+              <span class="partner__wrapper">
+                <img
+                  width="381"
+                  height="200"
+                  loading="lazy"
+                  src="/images/holtsovhouse.webp"
+                  alt=""
+                />
+              </span>
+              <div class="partner__cover">
+                <div class="partner__name">HoltsovHouse</div>
+              </div>
+            </a>
+          </div>
+        </v-col>
+        <v-col cols="4"
+          ><div class="partners__item">
+            <div class="partner__item">
+              <a class="partner__link" target="_blank">
+                <span class="partner__wrapper">
+                  <img
+                    width="381"
+                    height="200"
+                    loading="lazy"
+                    src="/images/ScoutHouse.webp"
+                    alt=""
+                  />
+                </span>
+                <div class="partner__cover">
+                  <div class="partner__name">ScoutHouse</div>
+                </div>
+              </a>
+            </div>
+          </div></v-col
+        >
+        <v-col cols="4"
+          ><div class="partners__item">
+            <div class="partner__item">
+              <a class="partner__link" target="_blank">
+                <span class="partner__wrapper">
+                  <img
+                    width="381"
+                    height="200"
+                    loading="lazy"
+                    src="../../public/images/holtsovhouse.webp"
+                    alt=""
+                  />
+                </span>
+                <div class="partner__cover">
+                  <div class="partner__name">NovoDacha</div>
+                </div>
+              </a>
+            </div>
+          </div></v-col
+        >
+      </v-row>
+    </v-container>
+  </section>
+  <section class="about__company">
+    <v-container>
+      <div>
+        <div class="about__title content__text">Про БИС</div>
+        <p class="about__text">
+          Наша команда с 2017 года занимается монтажами свайно винтовых фундаментов, заборов,
+          инженерных сетей и благоустройством участков. <br />Мы хотим, чтобы все кто обратились к
+          нам, получили результат максимально схожий с их представлениями и потребностями. Это
+          достигается проектированием, наличием ресурсов выполнять большой спектр услуг, нашим
+          разносторонним опытом и индивидуальным подходом.
+        </p>
+      </div>
+    </v-container>
   </section>
 </template>
 
@@ -526,5 +600,62 @@ export default defineComponent({
   line-height: 115%;
   color: #009cd9;
   cursor: pointer;
+}
+.partner__item {
+  position: relative;
+}
+.partner__link {
+  position: relative;
+  display: flex;
+  height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.partner__wrapper {
+  background: #405460;
+  top: 0;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.partner__wrapper img {
+  object-fit: cover;
+  top: 0;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.partner__link .partner__cover {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  color: #fff;
+  padding: 20px;
+  transition: opacity 0.2s;
+}
+.partner__link .partner__cover::before {
+  content: ' ';
+  bottom: 0;
+  height: 90px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  position: absolute;
+  width: 100%;
+  left: 0;
+  color: #fff;
+}
+.partner__link .partner__name {
+  font-size: 20px;
+  line-height: 24px;
+  position: relative;
+  color: #fff;
+  padding: 0 0 9px;
+}
+.partner__name {
+  margin: 0;
+}
+.about__text {
+  font-size: 1.2rem;
 }
 </style>
