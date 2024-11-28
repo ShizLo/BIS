@@ -73,7 +73,7 @@
       <router-view />
     </v-main>
     <footer class="footer">
-      <v-container> Footer </v-container>
+      <v-container> </v-container>
     </footer>
   </v-app>
 </template>

@@ -12,7 +12,7 @@
                 <div class="content__item-wrap">
                   <a class="content__link">
                     <div class="content__description">
-                      <div class="content__title">Монтаж ЛОС</div>
+                      <div class="content__title">Установка септика</div>
                       <div class="content__price">
                         <span>От 65 000 руб.</span>
                       </div>
@@ -429,7 +429,7 @@
                     width="381"
                     height="200"
                     loading="lazy"
-                    src="../../public/images/holtsovhouse.webp"
+                    src="/images/holtsovhouse.webp"
                     alt=""
                   />
                 </span>
@@ -448,7 +448,7 @@
       <div>
         <div class="about__title content__text">Про БИС</div>
         <p class="about__text">
-          Наша команда с 2017 года занимается монтажами свайно винтовых фундаментов, заборов,
+          Наша команда с 2017 года занимается монтажом свайно винтовых фундаментов, заборов,
           инженерных сетей и благоустройством участков. <br />Мы хотим, чтобы все кто обратились к
           нам, получили результат максимально схожий с их представлениями и потребностями. Это
           достигается проектированием, наличием ресурсов выполнять большой спектр услуг, нашим
